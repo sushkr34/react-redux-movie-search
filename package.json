@@ -1,8 +1,10 @@
 {
+  "homepage": "http://sushkr34.github.io/react-redux-movie-search",
   "name": "react-redux-movie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-fontawesome": "^1.6.1",
@@ -13,6 +15,8 @@
     "redux-promise": "^0.6.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
